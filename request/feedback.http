@@ -1,0 +1,24 @@
+
+###
+POST http://localhost:8080/v0/feedback
+Content-Type: application/json
+
+{
+  "description": "Nueva encuesta 3",
+  "questions" : [{
+    "questionStr": "¿Cual es tu serie favorita?",
+    "type": "MULTIPLE",
+    "answers": [{
+      "answerDescription" : "Game of Thrones"
+    },{
+      "answerDescription" : "Friends"
+    }]
+  },{
+    "questionStr": "¿Cual es el nombre de tu primer colegio?",
+    "type": "OPEN"
+  }]
+}
+
+###
+GET http://localhost:8080/v0/feedback
+Content-Type: application/json
