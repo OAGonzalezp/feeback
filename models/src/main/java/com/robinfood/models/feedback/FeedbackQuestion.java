@@ -13,7 +13,7 @@ import java.util.Set;
 @Table(name = "FBCK_FeedbackQuestion")
 public class FeedbackQuestion {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
